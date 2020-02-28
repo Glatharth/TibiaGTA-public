@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Barriga" nameDescription="a Barriga" race="blood" experience="25000" speed="320">
+	<health now="30500" max="30500" />
+	<look type="22" head="0" body="0" legs="0" feet="0" addons="0" corpse="6080" />
+	<targetchange interval="10000" chance="100" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="0" max="-520" />
+		<attack name="physical" interval="2000" chance="50" range="7" min="0" max="-380">
+			<attribute key="shootEffect" value="infernalbolt" />
+		</attack>
+	</attacks>
+	<defenses armor="40" defense="40" />
+	<elements>
+		<element physicalPercent="35" />
+	</elements>
+	<immunities>
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+		<immunity earth="1" />
+		<immunity ice="1" />
+	</immunities>
+	<voices interval="10000" chance="50">
+		<voice sentence="Pode vim cusao" yell="1" />
+		<voice sentence="Quer me matar?" yell="1" />
+		<voice sentence="Eu posso morrer, mas eu levo pelo menos metade" yell="1" />
+		<voice sentence="Filhos da puta" />
+	</voices>
+	<loot>
+	</loot>
+</monster>

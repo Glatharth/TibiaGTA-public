@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<channels>
+	<channel id="2" name="Staff" script="staff.lua" />
+	<channel id="3" name="World Chat" public="1" script="worldchat.lua" />
+	<channel id="4" name="Advertising" public="1" script="advertising.lua" />
+	<channel id="5" name="Help" public="1" script="help.lua" />
+	<channel id="6" name="Gamemaster" script="gamemaster.lua" />
+
+	<channel id="7" name="Renegados" script="renegado-chat.lua" />
+	<channel id="8" name="Justiceiros" script="justiceiro-chat.lua" />
+</channels>

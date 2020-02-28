@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Samurai" nameDescription="a samurai" race="blood" experience="1500" speed="290">
+	<health now="20550" max="20550" />
+	<look type="156" head="97" body="97" legs="97" feet="97" addons="3" corpse="5969" />
+	<targetchange interval="1000" chance="25" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1500" skill="120" attack="140" />
+		<attack name="physical" interval="3000" chance="65" range="7" min="-300" max="-430">
+			<attribute key="shootEffect" value="greenstar" />
+		</attack>
+	</attacks>
+	<defenses armor="50" defense="20" />
+	<voices interval="10000" chance="35">
+		<voice sentence="11001100" yell="1" />
+		<voice sentence="11111100" yell="1" />
+		<voice sentence="00001111" yell="1" />
+		<voice sentence="11100001" />
+	</voices>
+	<loot>
+	</loot>
+</monster>

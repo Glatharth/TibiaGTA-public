@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Zumbi" nameDescription="a zumbi" race="undead" experience="2000" speed="300" manacost="0">
+	<health now="2000" max="2000"/>
+	<look type="311" corpse="9875"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="90" attack="110"/>
+		<attack name="melee" interval="5000" skill="20" attack="35" poison="500"/>
+		<attack name="manadrain" interval="1000" chance="13" range="1" min="-100" max="-350"/>
+		<attack name="earth" interval="2000" chance="40" length="4" spread="0" min="-150" max="-200">
+       		<attribute key="areaEffect" value="greenbubble"/>
+     	</attack>
+	</attacks>
+	<defenses armor="15" defense="10"/>
+	<elements>
+		<element firePercent="-40"/>
+		<element icePercent="20"/>
+	</elements>
+	<immunities>
+		<immunity death="1"/>
+		<immunity energy="1"/>
+		<immunity earth="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Mst.... klll...."/>
+		<voice sentence="Whrrrr... ssss.... mmm.... grrrrl"/>
+		<voice sentence="Dnnnt... cmmm... clsrrr...."/>
+		<voice sentence="Httt.... hmnnsss..."/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="100" chance="64000"/><!-- gold coin -->
+		<item id="2148" countmax="60" chance="24000"/><!-- gold coin -->
+		<item id="2152" countmax="13" chance="45000"/><!-- platinum coin -->
+		<item id="2155" chance="4000"/><!-- green gem -->
+		<item id="2227" chance="45000"/><!-- rotten meat -->
+	</loot>
+</monster>

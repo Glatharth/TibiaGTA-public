@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<spells>
+	<!-- Attack Runes -->
+	<instant group="attack" spellid="1" name="Chamas" words="!chamas"  aggressive="1" blockwalls="1" direction="1" exhaustion="1000" groupcooldown="1000" needtarget="0" needlearn="0" script="custom/chamas.lua"/>
+	
+	<instant group="support" spellid="2" name="Manaon" words="!manaon" level="8" aggressive="0" selftarget="1" cooldown="1000" groupcooldown="1000" needlearn="0" script="support/manaon.lua"/>
+
+	<instant group="support" spellid="3" name="Manaoff" words="!manaoff" level="8" aggressive="0" selftarget="1" cooldown="1000" groupcooldown="1000" needlearn="0" script="support/manaoff.lua"/>
+
+	<instant group="healing" spellid="4" name="Cura" words="!cura" level="8" mana="35" aggressive="0" selftarget="1" cooldown="1000" groupcooldown="1000" needlearn="0" script="healing/cura.lua"/>
+
+	<instant group="support" spellid="5" name="Fast" words="!fast" level="20" aggressive="0" selftarget="1" cooldown="2000" groupcooldown="2000" needlearn="1" script="support/fast.lua"/>
+
+	<instant group="support" spellid="6" name="Find Person" words="exiva" level="8" mana="20" aggressive="0" playernameparam="1" params="1" cooldown="2000" groupcooldown="2000" needlearn="1" script="support/find_person.lua"/>
+
+	<instant group="support" spellid="7" name="Luz" words="!luz" level="8" mana="20" aggressive="0" selftarget="1" cooldown="2000" groupcooldown="2000" needlearn="0" script="support/luz.lua"/>
+
+	<rune group="healing" name="Xarope" id="12724" charges="1" exhaustion="600" aggressive="0" needtarget="1" blocktype="solid" script="healing/xarope.lua"/>
+
+	<rune group="healing" name="Vitamina" id="13381" allowfaruse="1" charges="1" exhaustion="600" aggressive="0" needtarget="1" blocktype="solid" script="healing/vitamina.lua"/>
+
+	<rune group="healing" name="Morfina" id="12721" allowfaruse="1" charges="1" exhaustion="600" aggressive="0" needtarget="1" blocktype="solid" script="healing/morfina.lua"/>
+
+	<rune group="healing" name="Mana" id="12723" allowfaruse="1" charges="1" exhaustion="1000" aggressive="0" needtarget="1" blocktype="solid" script="healing/mana.lua"/>
+
+
+
+	<rune group="attack" name="Magnum" id="12664" allowfaruse="1" lvl="10" exhaustion="1750" groupcooldown="1750" blocktype="solid" script="arma.lua"/>
+	<rune group="attack" name="Pistol Free" id="12661" allowfaruse="1" lvl="10" exhaustion="1350" groupcooldown="1350" blocktype="solid" script="arma.lua"/>
+	<rune group="attack" name="Taurus" id="12681" allowfaruse="1" lvl="10" exhaustion="1350" groupcooldown="1350" blocktype="solid" script="arma.lua"/>
+
+	<rune group="attack" name="Ak-47" id="12663" allowfaruse="1" lvl="10" exhaustion="800" groupcooldown="800" blocktype="solid" script="arma.lua"/>
+	<rune group="attack" name="Navy" id="12671" allowfaruse="1" lvl="10" exhaustion="800" groupcooldown="800" blocktype="solid" script="arma.lua"/>
+	<rune group="attack" name="Ak-47 Black" id="12686" allowfaruse="1" lvl="10" exhaustion="670" groupcooldown="670" blocktype="solid" script="arma.lua"/>
+	<rune group="attack" name="Ak-47 Gold" id="12683" allowfaruse="1" lvl="10" exhaustion="700" groupcooldown="700" blocktype="solid" script="arma.lua"/>
+
+	<rune group="attack" name="Shotgun" id="12677" allowfaruse="1" lvl="10" exhaustion="3000" groupcooldown="3000" blocktype="solid" script="arma.lua"/>
+
+
+
+	<!-- House Spells -->
+	<instant name="House Guest List" words="aleta sio" selftarget="1" aggressive="0" function="editHouseGuest"/>
+	<instant name="House Subowner List" words="aleta som" selftarget="1" aggressive="0" function="editHouseSubOwner"/>
+	<instant name="House Door List" words="aleta grav" selftarget="1" aggressive="0" function="editHouseDoor"/>
+	<instant name="House Kick" words="alana sio" params="1" aggressive="0" function="houseKick"/>
+</spells>

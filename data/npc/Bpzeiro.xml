@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<npc name="Bpzeiro" script="bp.lua" walkinterval="3500" floorchange="0">
+	<health now="100" max="100" />
+	<look type="134" head="114" body="113" legs="113" feet="113"/>
+</npc>

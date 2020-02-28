@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Exterminador" nameDescription="a Exterminador" race="undead" experience="3800" speed="315">
+	<health now="5500" max="5500" />
+	<look type="55" head="0" body="0" legs="0" feet="0" addons="0" corpse="6023" />
+	<targetchange interval="1000" chance="25" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" lifedrain="600" skill="115" attack="120" />
+		<attack name="physical" interval="2000" chance="28" range="7" min="-200" max="-350">
+			<attribute key="shootEffect" value="bolt" />
+		</attack>
+	</attacks>
+	<defenses armor="50" defense="20" />
+	<elements>
+		<element icePercent="5" />
+		<element physicalPercent="30" />
+		<element firePercent="5" />
+	</elements>
+	<voices interval="10000" chance="35">
+		<voice sentence="11101110" yell="1" />
+		<voice sentence="10111100" yell="1" />
+		<voice sentence="10101111" yell="1" />
+		<voice sentence="11001011" />
+	</voices>
+	<loot>
+		<item id="2148" countmax="80" chance="65000" /> <!-- gold coin -->
+		<item id="2152" countmax="2" chance="30000" /> <!-- platinum coin -->
+		<item id="13381" countmax="4" chance="6500" /> <!-- vitamina -->
+		<item id="1987" chance="100000"><!-- bag -->
+			<item id="2151" countmax="1" chance="1200" /> <!-- talon -->
+			<item id="13373" countmax="3" chance="6500" /> <!-- X-tudo -->
+			<item id="12701" countmax="2" chance="850" /> <!-- red bullet -->
+			<item id="12700" countmax="3" chance="3000" /> <!-- bullet -->
+			<item id="12702" countmax="5" chance="8500" /> <!-- chumbo -->
+			<item id="2153" chance="2000" /> <!-- violet gem -->
+			<item id="2155" chance="800" /> <!-- green gem -->
+			<item id="12789" chance="600" /> <!-- yellow shoes -->
+		</item>
+	</loot>
+</monster>

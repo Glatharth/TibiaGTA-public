@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Mytra" nameDescription="um masson" race="blood" experience="1800" speed="570">
+  <health now="12000" max="12000"/>
+  <look type="194" head="114" body="100" legs="100" feet="114" corpse="3058"/>
+  <targetchange interval="2000" chance="0"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="1"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="1"/>
+    <flag pushable="1"/>
+    <flag canpushitems="0"/>
+    <flag canpushcreatures="0"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="85" attack="95"/>
+  </attacks>
+  <defenses armor="11" defense="11"/>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="0"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="0"/>
+    <immunity outfit="0"/>
+    <immunity drunk="0"/>
+    <immunity invisible="0"/>
+  </immunities>
+  <loot>
+      <item id="2148" countmax="85" chance="65000"/> <!-- gold coin -->
+      <item id="2152" countmax="4" chance="7000"/> <!-- platinum coin -->
+      <item id="12698" countmax="6" chance="15000"/> <!-- dardos -->
+      <item id="2153" chance="16000"/> <!-- violet gem -->
+      <item id="12790" chance="1000"/> <!-- green shoes -->
+  </loot>
+</monster>

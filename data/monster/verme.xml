@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Verme" nameDescription="a verme" race="blood" experience="65" speed="150" manacost="305">
+	<health now="160" max="160" />
+	<look type="26" corpse="5967" />
+	<targetchange interval="4000" chance="0" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="1" />
+		<flag pushable="0" />
+		<flag canpushitems="0" />
+		<flag canpushcreatures="0" />
+		<flag targetdistance="1" />
+		<flag staticattack="70" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="40" attack="30" />
+	</attacks>
+	<defenses armor="10" defense="10" />
+	<loot>
+		<item id="2148" countmax="18" chance="26750"/><!-- gold coin -->
+		<item id="3976" countmax="5" chance="50000"/><!-- worm -->
+		<item id="2666" countmax="2" chance="20000"/><!-- meat -->
+		<item id="2671" countmax="2" chance="18000"/><!-- ham -->
+		<item id="1987" chance="100000"><!-- bag -->
+			<item id="12781" chance="500"/><!-- escudo -->
+		</item>
+	</loot>
+</monster>

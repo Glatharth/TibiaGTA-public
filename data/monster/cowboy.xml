@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Cowboy" nameDescription="a cowboy" race="undead" experience="1600" speed="300">
+	<health now="2100" max="2100" />
+	<look type="289" head="114" body="115" legs="39" feet="114" addons="2" corpse="3058" />
+	<targetchange interval="1000" chance="25" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="100" attack="80" />
+		<attack name="physical" interval="2000" chance="28" range="7" min="-150" max="-380">
+			<attribute key="shootEffect" value="bolt" />
+		</attack>
+	</attacks>
+	<defenses armor="50" defense="20" />
+	<voices interval="10000" chance="35">
+		<voice sentence="Aeeehhh" yell="1" />
+		<voice sentence="Yaaa" yell="1" />
+	</voices>
+	<loot>
+		<item id="2148" countmax="80" chance="90000"/> <!-- gold coin -->
+		<item id="2148" countmax="25" chance="45000"/> <!-- gold coin -->
+		<item id="2152" countmax="3" chance="29000"/> <!-- platinum coin -->
+		<item id="12701" countmax="4" chance="20500"/> <!-- red bullet -->
+		<item id="1987" chance="100000"><!-- bag -->
+			<item id="2145" countmax="3" chance="29000"/> <!-- small diamond -->
+			<item id="2671" countmax="2" chance="10000"/> <!-- Scarab Coins -->
+			<item id="2666" countmax="3" chance="50000"/> <!--meat -->
+			<item id="2154" chance="17000"/> <!-- yellow gem -->
+			<item id="2153" chance="27000"/> <!-- violet gem -->
+			<item id="2155" chance="12000"/> <!-- green gem -->
+		</item>
+	</loot>
+</monster>

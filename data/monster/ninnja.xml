@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Ninnja" nameDescription="a ninnja" race="blood" experience="1500" speed="290">
+	<health now="1550" max="1550" />
+	<look type="156" head="114" body="114" legs="114" feet="114" addons="3" corpse="3065" />
+	<targetchange interval="1000" chance="25" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1500" skill="90" attack="60"/>
+		<attack name="physical" interval="3000" chance="65" range="7" min="-100" max="-280">
+			<attribute key="shootEffect" value="greenstar" />
+		</attack>
+	</attacks>
+	<defenses armor="50" defense="20" />
+	<loot>
+		<item id="2148" countmax="70" chance="60000"/><!-- gold coin -->
+		<item id="2148" countmax="40" chance="20000"/><!-- gold coin -->
+		<item id="2696" countmax="2" chance="40000"/><!-- cheese -->
+		<item id="12781" chance="10500"/> <!-- tampa shield -->
+		<item id="12732" chance="7500"/> <!-- gorro do chaves -->
+	</loot>
+</monster>

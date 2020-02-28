@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.encoding": "iso88591",
+		"editor.suggestOnTriggerCharacters": false,
+		"lua.targetVersion": "5.3"
+	}
+}

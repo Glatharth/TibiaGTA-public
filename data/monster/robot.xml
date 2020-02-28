@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Robot" nameDescription="a Robot" race="undead" experience="450" speed="250">
+	<health now="900" max="900" />
+	<look type="25" head="0" body="0" legs="0" feet="0" addons="0" corpse="5969" />
+	<targetchange interval="10000" chance="100" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="65" attack="70" />
+		<attack name="physical" interval="4500" chance="55" range="7" min="-20" max="-50">
+			<attribute key="shootEffect" value="bolt" />
+		</attack>
+	</attacks>
+	<defenses armor="50" defense="20" />
+	<voices interval="10000" chance="35">
+		<voice sentence="11001100" yell="1" />
+		<voice sentence="11111100" yell="1" />
+		<voice sentence="10001111" yell="1" />
+		<voice sentence="11100001" />
+	</voices>
+	<loot>
+		<item id="2148" countmax="60" chance="60000" /> <!-- gold coin -->
+		<item id="2151" countmax="1" chance="6000" /> <!-- talon -->
+		<item id="13373" countmax="5" chance="4500" /> <!-- X-tudo -->
+		<item id="12701" countmax="2" chance="450" /> <!-- red bullet -->
+		<item id="12702" countmax="2" chance="750" /> <!-- chumbo -->
+		<item id="2153" chance="2000" /> <!-- violet gem -->
+	</loot>
+</monster>

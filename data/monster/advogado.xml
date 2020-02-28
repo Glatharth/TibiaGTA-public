@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Advogado" nameDescription="a advogado" race="undead" experience="1500" speed="290">
+	<health now="2100" max="2100" />
+	<look type="132" head="114" body="115" legs="39" feet="114" addons="2" corpse="3058" />
+	<targetchange interval="1000" chance="25" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="60" attack="80" />
+		<attack name="physical" interval="2000" chance="28" range="7" min="-50" max="-250">
+			<attribute key="shootEffect" value="bolt" />
+		</attack>
+	</attacks>
+	<defenses armor="50" defense="20" />
+	<elements>
+		<element icePercent="60"/>
+	</elements>
+	<voices interval="10000" chance="35">
+		<voice sentence="Venha aqui que eu mostro o que é 157" yell="1" />
+		<voice sentence="Eu vou te denunciar!!!" yell="1" />
+	</voices>
+	<loot>
+		<item id="2148" countmax="65" chance="75000"/> <!-- gold coin -->
+		<item id="2148" countmax="25" chance="50000"/> <!-- gold coin -->
+		<item id="2152" countmax="3" chance="34000"/> <!-- platinum coin -->
+		<item id="2145" countmax="2" chance="27000"/> <!-- small diamond -->
+		<item id="2154" chance="17000"/> <!-- yellow gem -->
+	</loot>
+</monster>

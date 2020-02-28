@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<outfits>
+	<!-- Female outfits -->
+	<!-- Justiceira -->
+	<outfit type="0" looktype="71" name="Justiceira" premium="no" unlocked="0" enabled="yes" />
+	<outfit type="0" looktype="37" name="Hinata" premium="no" unlocked="0" enabled="yes" />
+	<outfit type="0" looktype="58" name="Sakura" premium="no" unlocked="0" enabled="yes" />
+	<outfit type="0" looktype="296" name="0" premium="no" unlocked="0" enabled="yes" />
+	<outfit type="0" looktype="297" name="1" premium="no" unlocked="0" enabled="yes" />
+
+	<!-- Renegada -->
+	<outfit type="0" looktype="70" name="Renegada" premium="no" unlocked="0" enabled="yes" />
+	<outfit type="0" looktype="96" name="00" premium="no" unlocked="0" enabled="yes" />
+	<outfit type="0" looktype="298" name="01" premium="no" unlocked="0" enabled="yes" />
+
+	<!-- Male outfits -->
+	<!-- Justiceiro -->
+	<outfit type="1" looktype="23" name="Justiceiro" premium="no" unlocked="0" enabled="yes" />
+	<outfit type="1" looktype="2" name="100" premium="no" unlocked="0" enabled="yes" />
+	<outfit type="1" looktype="5" name="101" premium="no" unlocked="0" enabled="yes" />
+	<outfit type="1" looktype="6" name="102" premium="no" unlocked="0" enabled="yes" />
+	<outfit type="1" looktype="18" name="103" premium="no" unlocked="0" enabled="yes" />
+	<outfit type="1" looktype="50" name="104" premium="no" unlocked="0" enabled="yes" />
+	<outfit type="1" looktype="59" name="105" premium="no" unlocked="0" enabled="yes" />
+	<outfit type="1" looktype="64" name="Emo" premium="no" unlocked="0" enabled="yes" />
+	<outfit type="1" looktype="65" name="Homer" premium="no" unlocked="0" enabled="yes" />
+	<outfit type="1" looktype="75" name="106" premium="no" unlocked="0" enabled="yes" />
+	<outfit type="1" looktype="78" name="107" premium="no" unlocked="0" enabled="yes" />
+	<outfit type="1" looktype="93" name="108" premium="no" unlocked="0" enabled="yes" />
+	<outfit type="1" looktype="216" name="109" premium="no" unlocked="0" enabled="yes" />
+	<outfit type="1" looktype="302" name="SubZero" premium="no" unlocked="0" enabled="yes" />
+
+	<!-- Renegado -->
+	<outfit type="1" looktype="63" name="Renegado" premium="no" unlocked="0" enabled="yes" />
+	<outfit type="1" looktype="7" name="200" premium="no" unlocked="0" enabled="yes" />
+	<outfit type="1" looktype="24" name="201" premium="no" unlocked="0" enabled="yes" />
+	<outfit type="1" looktype="29" name="202" premium="no" unlocked="0" enabled="yes" />
+	<outfit type="1" looktype="31" name="203" premium="no" unlocked="0" enabled="yes" />
+	<outfit type="1" looktype="40" name="204" premium="no" unlocked="0" enabled="yes" />
+	<outfit type="1" looktype="48" name="Scorpion" premium="no" unlocked="0" enabled="yes" />
+	<outfit type="1" looktype="43" name="205" premium="no" unlocked="0" enabled="yes" />
+	<outfit type="1" looktype="61" name="X9" premium="no" unlocked="0" enabled="yes" />
+	<outfit type="1" looktype="68" name="206" premium="no" unlocked="0" enabled="yes" />
+	<outfit type="1" looktype="69" name="Panic" premium="no" unlocked="0" enabled="yes" />
+	<outfit type="1" looktype="202" name="207" premium="no" unlocked="0" enabled="yes" />
+
+	<!-- Others -->
+	<outfit type="0" looktype="34" name="000" premium="no" unlocked="0" enabled="yes" />
+	<outfit type="1" looktype="34" name="000" premium="no" unlocked="0" enabled="yes" />
+	<outfit type="0" looktype="73" name="001" premium="no" unlocked="0" enabled="yes" />
+	<outfit type="1" looktype="73" name="001" premium="no" unlocked="0" enabled="yes" />
+	<outfit type="1" looktype="128" name="002" premium="no" unlocked="0" enabled="yes" />
+	<outfit type="0" looktype="136" name="003" premium="no" unlocked="0" enabled="yes" />
+	<outfit type="0" looktype="138" name="004" premium="no" unlocked="0" enabled="yes" />
+	<outfit type="0" looktype="275" name="Conversivel" premium="no" unlocked="0" enabled="yes" />
+	<outfit type="1" looktype="275" name="Conversivel" premium="no" unlocked="0" enabled="yes" />
+
+	<!-- Gamemaster -->
+	<outfit type="0" access="3" looktype="212" name="Admin" premium="no" unlocked="0" enabled="yes" />
+	<outfit type="1" access="3" looktype="212" name="Admin" premium="no" unlocked="0" enabled="yes" />
+
+	<outfit type="0" access="3" looktype="289" name="Cowboy" premium="no" unlocked="0" enabled="yes" />
+	<outfit type="1" access="3" looktype="289" name="Cowboy" premium="no" unlocked="0" enabled="yes" />
+
+	<outfit type="0" access="3" looktype="156" name="Ninnja" premium="no" unlocked="0" enabled="yes" />
+	<outfit type="1" access="3" looktype="156" name="Ninnja" premium="no" unlocked="0" enabled="yes" />
+
+	<outfit type="0" access="3" looktype="153" name="Mendigo" premium="no" unlocked="0" enabled="yes" />
+	<outfit type="1" access="3" looktype="153" name="Mendigo" premium="no" unlocked="0" enabled="yes" />
+
+
+</outfits>

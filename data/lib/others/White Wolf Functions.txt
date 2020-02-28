@@ -1,0 +1,205 @@
+1º-- isWalkable(pos[, creature[, proj[, pz]]])
+Oque faz: Verifica se uma posição é andável tomando como base 3 coisas: Se há criatura na pos, se há alguma sinalização de bloqueio de projétil ou bloqueio de caminho no item que está nessa posição ou se o chão daquela posição é do tipo pz
+Como utilizar: isWalkable(posição que irá analisar, true/false, true/false, true/false) para decidir se quer verificar cada uma das coisas. No caso de você não indicar os parametros eles terão valor false.
+xemplo: isWalkable(pos) é a mesma coisa que isWalkable(pos, false, false, false) e irá retornar verdadeiro se a posição for andável ou falso se não for.
+
+2º-- hasGroundInDistance(uid, distance, tablegrama)
+Oque faz: Verifica se todos sqms ao redor de uma criatura em  'distance' sqms são feitos de grounds que estejam na tablegrama
+Como utilizar: hasGroundInDistance(cid, 1, {8591, 4526, 4527}) irá verificar se nas posições ao redor do player todos os ids de piso são um desses da tabela: ou 8591, 4526 ou 4527 e irá retornar verdadeiro, do contrário irá retornar falso
+
+3º-- checkGroundInDistance(uid, distance, tablegrama)
+Oque faz: Semelhante a anterior só que dessa vez irá retornar uma tabela com todas as posições que possuam ground com mesmo id dos inseridos em tablegrama.
+Como utilizar: checkGroundInDistance(cid, 2, {8591, 4526, 4527}) irá retornar todas as posições partindo da posição do player com 2 sqms de distancia:
+x x x x x
+x x x x x
+x x p x x
+x x x x x
+x x x x x
+se o itemid do ground em x for igual a um dos ids colocados em tablegrama irá retornar essa posição dentro de uma tabela/vetor.
+
+4º-- spinRotate(uid, spins, delay)
+Oque faz: Faz uma criatura girar (alterar gradativamente a direção que ela está olhando) 'spins' vezes em 'delay' tempo
+Como utilizar: spinRotate(cid, 2, 150) irá fazer o player dar 2 voltas completas com intervalo de 150 milisegundos pra cada virada que ele der.
+Irá retornar verdadeiro caso a volta seja completa.
+
+5º-- getPositionsByDirection(uid)
+Oque faz: Retorna uma tabela de posições ao redor do player com base na direção que o player está olhando, fiz essa função inicialmente para servidores alternativos mas ela acabou se tornando útil em outros scripts mais complexos.
+Ela sempre começa a contagem a partir da diagonal mais próxima no sentido horário a partir da posição que o player está olhando.
+Exemplo: Se o player está olhando para /\ as posições contadas serão na ordem:
+
+7 8 1
+6 p 2
+5 4 3
+Como utilizar: getPositionsByDirection(cid) e irá retornar uma tabela com as posições em ordem 1, 2, 3, 4, 5, 6, 7, 8 e por ultimo a posição do player.
+
+6º-- checkGroundInArray(array, tablegrama)
+Oque faz: Checa todos os pisos num array de posições para ver se há algum id semelhante aos que estão colocados em tablegrama, caso haja irá adicionar essa posição num vetor e por fim retorna o vetor de posições.
+Como utilizar: checkGroundInArray(getPositionsByDirection(cid), {8591, 4526, 4527}) irá primeiramente criar um vetor de posições através da função getPositionsByDirection(cid) e em seguida irá verificar quais dessas posições possuem os ids dos pisos como sendo 8591 ou 4526 ou 4527, e irá retornar as posições que possuem num vetor.
+
+7º-- creatureGoToPos(uid, position, delay)
+Oque faz: Faz uma criatura andar até uma posição dando passos com intervalo como sendo delay. Essa função ainda está em desenvolvimento mas já resolve problemas simples, sugiro que não use para coisas muito elaboradas pois ela ainda é incapaz de atravessar obstáculos com mais de 2 sqms de distancia. 
+Como utilizar: creatureGoToPos(cid, {x = 160, y = 54, z = 7}, 150) irá fazer o player ir até a posição do templo (no meu server é 160, 54, 7) dando 1 passo a cada 150 milisegundos (acredite isso é bem rapido). Caso tenha algum obstáculo no caminho a função desvia desse obstaculo mas para obstáculos grandes com ordem de dimensão maior que 2 ela ainda não é capaz então só a utilize para caminhos curtos ou lugares abertos.
+Retorna o número de passos que deu até chegar na posição final.
+
+8º-- isOnSameFloor (fromPos, toPos)
+Oque faz: verifica se duas posições estão no mesmo andar.
+Como utilizar: isOnSameFloor({x = 160, y = 54, z = 7}, {x = 125, y = 64, z = 7}) irá retornar true, caso o z seja diferente irá retornar false.
+
+9º-- isEven(arg)
+Oque faz: verifica se um número é par
+Como utilizar: isEven(10) irá retornar true pois 10 é par, isEven(50 - 1) irá retornar false pois 50-1 é igual a 49, que é ímpar.
+
+10º-- getDistanceRadius(fromPos, toPos)
+Oque faz: Pega o raio mínimo de distancia necessário para se executar uma checagem e alcançar duas posições.
+Como utilizar: getDistanceRadius({x = 125, y = 54, z = 7}, {x = 125, y = 64, z = 7}) irá retornar 5 pois se eu estiver na posição do meio das duas, com 5 sqm eu consigo chegar da posição do meio até qualquer uma das duas
+
+11º-- walkForward(uid)
+Oque faz: faz uma criatura andar pra frente.
+Como utilizar: walkForward(cid)
+
+12º-- getMiddlePos(fromPos, toPos)
+Oque faz: Pega a posição do meio entre duas posições contanto que elas estejam no mesmo andar.
+Como utilizar getMiddlePos({x = 125, y = 54, z = 7}, {x = 125, y = 64, z = 7}) irá retornar a posição {x = 125, y = 59, z = 7} que é a posição do meio entre as duas.
+
+13º-- Taunt(uid, target, delay, times)
+Oque faz: provoca um target obrigando ele a ir em sua direção enlouquecidamente
+Como utilizar: Taunt(cid, target, 150, 5) irá fazer o target correr até o cid dando 1 passo a cada 150 milisegundos num total de 5 passos ou até chegar no player.
+
+14º-- getFloorsBetweenPos(fromPos, toPos)
+Oque faz: Pega todos os andares entre duas posições.
+Como utilizar: getFloorsBetweenPos({x = 125, y = 54, z = 4}, {x = 125, y = 64, z = 7}) irá retornar 3 pois é a diferença entre os dois z's
+
+15º-- getLowestFloor(fromPos, toPos)
+Oque faz: Retorna o menor andar entre duas posições
+Como utilizar: getLowestFloor({x = 125, y = 54, z = 4}, {x = 125, y = 64, z = 7}) irá retornar 4 pois é o menor z dentre as posições.
+
+16º-- getAllPlayersInArea(fromPos, toPos)
+Oque faz: Pega todos os players entre duas áreas, se as áreas estiverem em andares diferentes ele checa todos os andares intermediários também.
+Como utilizar: getAllPlayersInArea({x = 125, y = 54, z = 4}, {x = 125, y = 64, z = 7}) irá retornar todos os players que estão entre os 10 sqms de distancia das posições (y = 54, 55, 56.. 63, 64) em todos os andares (z = 4, 5, 6, 7) e retorna uma tabela com todos os players que estão dentro desse range.
+
+17º-- clearArea(middlePos, rangex, rangey, mob, player)
+Oque faz: limpa uma área de quest/evento se baseando nos parametros. middlePos é a posição do meio a qual você vai partir, rangex e rangey é quantos sqms a partir da posição do meio você irá checar e mob e player você coloca true/false para escolher se quer limpar a area de monstros e ou de players.
+Como utilizar: clearArea({x = 125, y = 54, z = 7}, 2, 1, false, true) irá analisar a seguinte posição:
+
+x x x x x
+x x p x x
+x x x x x
+Como vcs podem ver, p é a posição, 2 é o numero de sqms de distancia no eixo x e 1 é o numero de sqms de distancia no eixo y. Se houver qualquer player nessa área ele irá ser enviado para o templo. Agora se você colocar true para mobs ele irá remover os monstros e recriá-los com a vida cheia nas exatas posições em que estavam os que foram removidos.
+
+18º-- addQuery(table, name, tipo, default)
+Oque faz: cria uma variável rapidamente na database;
+Como utilizar: addQuery("players", "testinho", "integer", 0) irá criar na tabela players uma variavel chamada testinho que irá guardar uma informação do tipo INTEGER (numero inteiro) e com valor padrão sendo 0.
+
+19º-- loopEffect(uid, effect, tempo)
+Oque faz: cria efeitos infinitos no player de distancias ao redor da posição dele. Obs: o tempo é em segundos e os efeitos são somente os de distancia.
+Como utilizar: loopEffect(cid, 18, 0.3) irá iniciar um efeito em loop da shuriken vermelha (efeito 18) a cada 0.3 segundos (300 milisegundos).
+
+20º-- getDistanceToMiddle(fromPos, toPos)
+Oque faz: retorna um vetor de posições com os valores máximos de distancia entre cada x e y  até a posição intermediária
+Como utilizar: getDistanceToMiddle({x = 125, y = 54, z = 7}, {x = 125, y = 64, z = 7}) você vai ter uma posição do meio como sendo {x = 125, y = 59, z = 7}  e a função irá retornar {x = 0, y = 5, z = 7} pois as duas posições tem x idêntico à posição do meio e a diferença delas para o y do meio é 5. O z é meramente ilustrativo nessa função pois a middlePos não existe caso não sejam no mesmo andar então não teria porque executá-la para achar o z.
+
+21º-- pairsByKeys(t, f)
+Oque faz: Organiza uma tabela t se baseando na função de organização em f. O padrão de f é a < b, ou seja, organizar de forma crescente.
+Como utilizar:
+
+lines = {
+c = 10,
+a = 24,
+b = 48,
+}
+
+for name, line in pairsByKeys(lines) do
+print(name, line)
+end
+vai printar:
+
+a 24
+b 48
+c 10
+Perceba que com essa função eu organizei uma tabela que contém seus indexes em força de string em ordem crescente (ordem alfabética)
+
+se eu tivesse utilizado f do parametro como sendo function(a, b) return a > b end da seguinte forma:
+
+for name, line in pairsByKeys(lines, function(a, b) return a > b end) do
+print(name, line)
+end
+eu iria obter no print:
+
+c 10
+b 48
+a 24
+22º-- table.max(t)
+Oque faz: retorna o maior index possível de uma tabela
+
+23º-- table.min(t)
+Oque faz: retorna o menor index possível de uma tabela
+
+24º-- doKillCreature(uid)
+Oque faz: mata uma criatura
+Como utilizar: doKillCreature(cid) irá matar o player.
+
+25º-- isHandItem(uid)
+Oque faz: Verifica se o item em uid é um item de mão
+Como utilizar: isHandItem(getPlayerSlotItem(cid, 6).uid) vai retornar true se o item no slot 6 for um item de mão (shield ou qualquer arma) e false se não for.
+
+26º-- isWearing(uid)
+Oque faz: Verifica se o item em uid é um item que está sendo utilizado pelo player no momento
+Como utilizar: isWearing(item.uid) vai retornar true se o item utilizado na action estiver no corpo do player e falso se não estiver.
+
+27º-- getItemDodgePercent(itemuid)
+Oque faz: Verifica se o item em uid possui um atributo chamado dodge (Função do Dodge System por Item)
+A utilização é semelhante dos dois exemplos acima.
+
+28º-- setItemDodgePercent(uid, percent)
+Oque faz: Seta uma % de dodge no item em uid (Função do Dodge System por Item)
+Como utilizar: setItemDodgePercent(item.uid, 45) irá adicionar 45% de atributo Dodge no item em uid.
+
+29º-- tableToString(tb)
+Oque faz: transforma uma tabela em string, também pode ser usada a função table.tostring(tb) e retorna a string.
+Como utilizar: local tabela = {arroz, feijao, pao, frango, leite, ovos}
+se eu der um tableToString(tabela) eu irei obter a seguinte string:
+"{[1] = arroz, [2] = feijao, [3] = pao, [4] = frango, [5]= leite, [6] = ovos,}"
+
+30º-- saveTable(table, name)
+Oque faz: Salva uma tabela em data/storage, o conteúdo da tabela fica num documento com nome igual a "name".
+Como utilizar: Ainda com base na tabela acima utilize saveTable(tabela, "lista de compras") e você vai ter em data/storage um documento com extensão .tbl chamado "lista de compras" e dentro com a string da tabela que foi mostrada acima.
+
+31º-- loadTable(name)
+Oque faz: Carrega uma tabela que foi salva anteriormente
+Como utilizar: loadTable("lista de compras") vai me retornar a tabela que foi salva.
+
+32º-- getWeapon(uid)
+Oque faz: retorna a arma que o player está utilizando, muito útil para scripts que alteram a arma como o meu experience system.
+Como utilizar: getWeapon(cid) irá retornar o item arma ou false caso ele não esteja utilizando nenhuma arma. Para fazer edições você só precisa usar getWeapon(cid).uid e você terá o uid pra utilizar em qualquer função que utilize .uid. Se preferir tb pode usar getWeapon(cid).itemid para pegar o id do item que é a arma e criar scripts legais.
+
+33º-- getItemLevel(uid, maxlevel)
+Oque faz: retorna o level de um item atraves da checagem se há algum +level no nome.
+Como utilizar: use getItemLevel(getWeapon(cid).uid, 12) que ele irá fazer uma checagem na arma de 1 até 12 para verificar se há +1, +2, .., + 11, +12 no nome do item.
+
+34º-- getMirroredPos(uid, target, radius)
+Oque faz: retorna a posição espelhada entre o cid e o target tendo radius como valor máximo.
+Como utilizar: getMirroredPos(cid, getCreatureTarget(cid), 2) vai funcionar assim:
+p, s, s, t, s, y, x;
+Se considerarmos p a posição do player e t a posição do target a posição espelhada (considere t como sendo o espelho) seria a x, porém x está a 3 sqm de distancia do target e o radius é 2 então a posição que irá ser retornada na função será y.
+
+35º-- outfitOnWalk(uid, key, id, tempo, lastPos)
+Oque faz: Ativa uma condition nova que irá modificar seu outfit sempre que vc andar, caso vc pare ele irá retornar ao outfit anterior. Os parametros são o uid da criatura que terá a condition ativada, uma key de storage qualquer, um id de lookType da outfit, o tempo em milisegundos pra se modificar o outfit e uma ultima posição como base pro inicio do script (recomenda-se usar nil no parametro lastPos pra melhor uso do script)
+Como usar: outfitOnWalk(cid, 13842, 153, 150, nil) irá fazer o player mudar pro outfit de lookType 153 chegando de 150 em 150 milisegundos para ver se ele ainda está na mesma posição anterior. O tempo que irá durar é salvo no storage 13842.
+Exemplo:
+
+setPlayerStorageValue(cid, 13842, os.time() + 25) --- irá adicionar 25 segundos de carga na condition
+outfitOnWalk(cid, 13842, 153, 150, nil) -- irá iniciar a condition.
+36º-- onCastChannel(uid[, target[, delay[, effect[, key]]]])
+Oque faz: Começa um cast de spell do tipo Channelling, carregando uma barra (é a função principal do cast system). Ao mover-se ou retirar target/trocar target o carregamento da spell será cancelado. Retorna o tempo final de execução da spell que será utilizado no addEvent pra soltar a magia no final do channelling.
+Como usar: Todos os parametros com excessão do cid são opcionais, se colocado um target a função irá continuamente checar se o target atual do player tem o mesmo uid do target colocado e cancelará o channelling caso não. Delay é o tempo para cada etapa de checagem (200 é o padrão), effect é o efeito que sairá a cada duas checagens (só nas pares) e key é um id de storage pra salvar algumas informações da função.
+onCastChannel(cid, getCreatureTarget(cid), 200, 36, 61728) irá iniciar um processo de casting do cid em cima do target dele com cada etapa em 200 milisegundos (são 10 etapas então a spell associada será castada através desse sistema após 2 segundos), 36 é o efeito que ficará saindo enquanto o player está carregando e 61728 é o storage associado à esse cast. Essa função pode ser usada para adicionar uma espécie de "carregamento" envolvendo outras funções e principalmente spells.
+
+37º-- doBlast(uid, target, delay, effectx, effectz, percent, min, max, type, hits[, fromPos[, n]])
+Oque faz: inicia um combat do tipo blast, a spell bate no target e ricocheteia entre os outros monstros/players ao redor dele.
+Como usar: uid é o id de quem ataca, target é o primeiro alvo, delay é o tempo pra escolher outro target, effectx é o efeito de distancia que irá ter ao trocar de target, effectz é o efeito que sairá quando o oponente for hitado, percent é a porcentagem de ricochetear e ir para outro inimigo perto, min é o minimo que tira (colocar um valor positivo para tirar dano), max é o maximo de dano que irá tirar (colocar um valor positivo pra tirar dano), type é o tipo de combate seguindo a tabela do constant.lua, hits é a quantidade de hits que irá dar, fromPos é a posição inicial e não é obrigatório colocar pois ele irá considerar a posição do player de qualquer forma, n é a contagem de quantos hits já foram dados então sempre coloque 1 ou nil pois sendo nil/false ele irá considerar 1 de qualquer forma.
+doBlast(cid, getCreatureTarget(cid), 300, 35, 11, 100, 50, 100, 2, 20, getCreaturePosition(cid), nil)
+irá produzir o mesmo resultado da spell desse tópico aqui
+
+38º-- doShowTimeByPos(uid, pos, duration, type)
+
+Oque faz: Faz uma contagem regressiva em determinada posição de duration até 1. O texto é pela função doCreatureSay e o type segue a tabela do constant.lua

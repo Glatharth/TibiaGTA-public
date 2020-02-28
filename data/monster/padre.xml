@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Padre" nameDescription="a padre" race="blood" experience="175" speed="200" manacost="600">
+	<health now="250" max="250" />
+	<look type="57" corpse="6080" />
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="1" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="1" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="25" attack="40" />
+	</attacks>
+	<defenses armor="30" defense="30">
+		<defense name="healing" interval="2000" chance="15" min="30" max="50">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+		<defense name="speed" interval="2000" chance="15" speedchange="300" duration="5000">
+			<attribute key="areaEffect" value="redshimmer" />
+		</defense>
+	</defenses>
+	<elements>
+		<element holyPercent="50" />
+		<element deathPercent="50" />
+		<element firePercent="35"/>
+		<element physicalPercent="-10" />
+		<element icePercent="20"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Repent Heretic!" />
+		<voice sentence="A prayer to the almighty one!" />
+		<voice sentence="I will punish the sinners!" />
+	</voices>
+	<loot>
+		<item id="1949" chance="2000" /><!-- scroll -->
+		<item id="2154" chance="3000" /> <!-- yellow gem -->
+		<item id="2153" chance="5000" /> <!-- violet gem -->
+		<item id="2044" chance="880" /><!-- lamp -->
+		<item id="2148" countmax="41" chance="60000" /> <!-- gold coin -->
+		<item id="2148" countmax="39" chance="45000" /> <!-- gold coin -->
+	</loot>
+</monster>

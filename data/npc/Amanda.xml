@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<npc name="Amanda" script="atributosClan.lua" walkinterval="3500" floorchange="0">
+    <health now="100" max="100" />
+    <look type="138" head="114" body="125" legs="107" feet="126" addons="3"/>
+    <parameters>
+        <parameter key="message_greet" value="O que deseja fazer pelo seu clan? {Atributos}, {Hunt}, {Fazenda}."/>
+    </parameters>
+</npc>

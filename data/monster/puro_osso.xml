@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Puro Osso" nameDescription="a skeleton" race="undead" experience="60" speed="150" manacost="300">
+	<health now="150" max="150" />
+	<look type="33" corpse="5972" />
+	<targetchange interval="4000" chance="0" />
+	<flags>
+		<flag summonable="1" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="1" />
+		<flag convinceable="1" />
+		<flag pushable="1" />
+		<flag canpushitems="0" />
+		<flag canpushcreatures="0" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="30" attack="30" />
+		<attack name="lifedrain" interval="2000" chance="15" range="1" min="-7" max="-13" />
+	</attacks>
+	<defenses armor="10" defense="10" />
+	<elements>
+		<element holyPercent="-5" />
+	</elements>
+	<immunities>
+		<immunity death="1" />
+		<immunity drown="1" />
+		<immunity lifedrain="1" />
+	</immunities>
+	<loot>
+		<item id="2148" countmax="60" chance="78500"/><!-- gold coin -->
+		<item id="2148" countmax="56" chance="64500"/><!-- gold coin -->
+		<item id="2050" chance="25000"/><!-- torch -->
+		<item id="2230" chance="49750"/><!-- bone -->
+		<item id="1987" chance="100000"><!-- bag -->
+				
+				<item id="2050" chance="25000"/><!-- torch -->	
+
+			
+		</item>
+	</loot>
+</monster>

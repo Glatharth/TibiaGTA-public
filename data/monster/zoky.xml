@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Zoky" nameDescription="a Zoky" race="undead" experience="7000" speed="680">
+	<health now="9200" max="9200" />
+	<look type="280" head="0" body="0" legs="0" feet="0" addons="0" corpse="6023" />
+	<targetchange interval="1500" chance="40" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" lifedrain="1000" skill="125" attack="145" />
+		<attack name="melee" interval="2000" ice="500" skill="35" attack="55" />
+		<attack name="physical" interval="5000" chance="45" range="7" min="-300" max="-500">
+			<attribute key="shootEffect" value="burstarrow" />
+		</attack>
+		<attack name="drowncondition" interval="3000" chance="65" length="3" spread="0" min="-1300" max="-2300">
+			<attribute key="areaEffect" value="purpleenergy"/>
+		</attack>
+	</attacks>
+	<defenses armor="70" defense="30" />
+	<elements>
+		<element icePercent="35" />
+		<element physicalPercent="30" />
+		<element firePercent="-8" />
+	</elements>
+	<voices interval="10000" chance="35">
+		<voice sentence="11001110" yell="1" />
+		<voice sentence="11111100" yell="1" />
+		<voice sentence="11101111" yell="1" />
+		<voice sentence="11001111" />
+	</voices>
+	<loot>
+		<item id="2148" countmax="80" chance="65000" /> <!-- gold coin -->
+		<item id="2152" countmax="5" chance="12500" /> <!-- platinum coin -->
+		<item id="13381" countmax="5" chance="8000" /> <!-- vitamina -->
+		<item id="1987" chance="100000"><!-- bag -->
+			<item id="2151" countmax="3" chance="2200" /> <!-- talon -->
+			<item id="13373" countmax="3" chance="6500" /> <!-- X-tudo -->
+			<item id="12701" countmax="3" chance="2500" /> <!-- red bullet -->
+			<item id="12700" countmax="4" chance="4000" /> <!-- bullet -->
+			<item id="12702" countmax="6" chance="6500" /> <!-- chumbo -->
+			<item id="2153" chance="3000" /> <!-- violet gem -->
+			<item id="2155" chance="1050" /> <!-- green gem -->
+			<item id="12789" chance="1000" /> <!-- yellow shoes -->
+			<item id="12760" chance="800" /> <!-- Camisa Skull -->
+			<item id="12796" chance="500" /> <!-- Terrorista legs -->
+			<item id="12786" chance="250" /> <!-- Hulk Shield -->
+		</item>
+	</loot>
+</monster>

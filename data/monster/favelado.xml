@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Favelado" nameDescription="um favelado" race="blood" experience="400" speed="170">
+  <health now="600" max="600"/>
+  <look type="153" head="116" body="116" legs="116" feet="116" corpse="3058"/>
+  <targetchange interval="2000" chance="0"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="1"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="1"/>
+    <flag pushable="1"/>
+    <flag canpushitems="0"/>
+    <flag canpushcreatures="0"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="45" attack="60"/>
+  </attacks>
+  <defenses armor="11" defense="11"/>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="0"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="0"/>
+    <immunity outfit="0"/>
+    <immunity drunk="0"/>
+    <immunity invisible="0"/>
+  </immunities>
+  <voices interval="1000" chance="5">
+    <voice sentence="Bolacha~=Biscoito!"/>
+  </voices>
+  <loot>
+      <item id="2148" countmax="35" chance="35000"/> <!-- gold coin -->
+      <item id="2148" countmax="20" chance="20000"/> <!-- gold coin -->
+      <item id="12702" countmax="3" chance="15000"/> <!-- chumbinho -->
+      <item id="12724" countmax="2" chance="10000"/> <!-- xarope -->
+      <item id="13349" countmax="2" chance="1000"/> <!-- polvora -->
+  </loot>
+</monster>

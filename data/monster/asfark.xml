@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Asfark" nameDescription="a Asfark" race="blood" experience="2650" speed="280" manacost="0">
+	<health now="3950" max="3950" />
+	<look type="9" head="0" body="0" legs="0" feet="0" corpse="6080" />
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="0" />
+		<flag targetdistance="5" />
+		<flag staticattack="90" />
+		<flag runonhealth="10" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="35" attack="60" />
+		<attack name="physical" interval="1800" chance="75" range="7" min="-100" max="-280">
+			<attribute key="shootEffect" value="arrow" />
+		</attack>
+	</attacks>
+	<defenses armor="10" defense="10" />
+	<voices interval="10000" chance="100">
+		<voice sentence="Voce vai morrer" />
+		<voice sentence="Vou dar voce de comida para os porcos" />
+	</voices>
+	<loot>
+		<item id="2148" countmax="90" chance="85000"/><!-- gold coin -->
+		<item id="2148" countmax="25" chance="27000"/><!-- gold coin -->
+		<item id="2152" countmax="2" chance="25000"/><!-- platinum coin -->
+		<item id="1987" chance="100000"><!-- bag -->
+			<item id="12700" countmax="8" chance="19500"/><!-- bullet -->
+			<item id="12702" countmax="12" chance="23000"/><!-- chumbinho -->
+			<item id="12790" chance="8000"/><!-- green shoes -->
+			<item id="2696" chance="6500"/><!-- cheese -->
+		</item>
+	</loot>
+</monster>

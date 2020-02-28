@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<creaturescripts>
+	<event type="login" name="PlayerLogin" script="login.lua" />
+	<event type="logout" name="PlayerLogout" script="logout.lua" />
+	<event type="login" name="FirstItems" script="firstitems.lua" />
+	<event type="login" name="RegenerateStamina" script="regeneratestamina.lua" />
+	<event type="death" name="PlayerDeath" script="playerdeath.lua" />
+	<event type="death" name="DropLoot" script="droploot.lua" />
+	<event type="extendedopcode" name="ExtendedOpcode" script="extendedopcode.lua" />
+	<event type="death" name="Cadeia" script="cadeia.lua" />
+
+	<!-- <event type="login" name="EnterCloseServer" script="entercloseserver.lua" /> -->
+
+	<event type="advance" name="Upreward" script="upreward.lua"/>
+	<event type="kill" name="Task" script="task.lua" />
+	<event type="death" name="Spawn" script="spawn.lua"/>
+	
+	<!-- Clans -->
+	<event type="death" name="PlayerPoint" script="clans.lua" />
+	<event type="kill" name="PlayerBank" script="clans.lua" />
+
+	
+<!--
+	<event type="login" name="OfflineTraining" script="offlinetraining.lua" />
+-->
+</creaturescripts>

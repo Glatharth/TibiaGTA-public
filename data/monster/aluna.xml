@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Aluna" nameDescription="uma aluna" race="blood" experience="50" speed="170" manacost="330">
+  <health now="120" max="120"/>
+  <look type="82" head="20" body="30" legs="40" feet="50" corpse="3065"/>
+  <targetchange interval="2000" chance="0"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="1"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="1"/>
+    <flag pushable="1"/>
+    <flag canpushitems="0"/>
+    <flag canpushcreatures="0"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="25" attack="15"/>
+  </attacks>
+  <defenses armor="11" defense="11"/>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="0"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="0"/>
+    <immunity outfit="0"/>
+    <immunity drunk="0"/>
+    <immunity invisible="0"/>
+  </immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="Vou te pegar!"/>
+    <voice sentence="Te pego na saida"/>
+    <voice sentence="Quer um do bom?"/>
+    <voice sentence="Fica pianinho"/>
+    <voice sentence="Perdeu o cu na minha cara?"/>
+  </voices>
+  <loot>
+    <item id="2148" countmax="60" chance1="90000" chancemax="0"/> <!-- gold coin-->
+    <item id="2148" countmax="40" chance1="30000" chancemax="0"/> <!-- gold coin-->
+    <item id="2152" countmax="2" chance1="1000" chancemax="0"/> <!-- platinum coin-->
+    <item id="1987" chance="100000"><!-- bag -->
+			<item id="2674" countmax="3" chance="22000"/><!-- red apple -->
+			<item id="12698" countmax="3" chance="18000"/><!-- dardo -->
+			<item id="12814" chance="30000"/><!-- chinelo -->
+			<item id="12667" chance="6500"/><!-- soqueira -->
+		</item>
+  </loot>
+</monster>

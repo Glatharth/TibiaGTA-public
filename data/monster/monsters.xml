@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monsters>
+	<!-- Treiners -->
+	<monster name="Treiner" file="Treiner/trainer.xml"/>
+	<monster name="Training Monk" file="Treiner/training_monk.xml"/>
+
+	<!-- Monstros -->
+	<monster name="Asfark" file="asfark.xml"/>
+	<monster name="Barriga" file="barriga.xml"/>
+	<monster name="Robot" file="robot.xml"/>
+	<monster name="Puro Osso" file="puro_osso.xml"/>
+	<monster name="Lobo Bom" file="lobo_bom.xml"/>
+	<monster name="Lobo Mau" file="lobo_mau.xml"/>
+	<monster name="Ratazana" file="ratazana.xml" />
+	<monster name="Rato" file="rato.xml" />
+	<monster name="Leitao" file="leitao.xml" />
+	<monster name="Androide" file="androide.xml" />
+	<monster name="Exterminador" file="exterminador.xml" />
+	<monster name="Cowboy" file="cowboy.xml" />
+	<monster name="Mutante" file="mutante.xml"/>
+	<monster name="Lobizomen" file="lobizomen.xml"/>
+	<monster name="Zumbi" file="zumbi.xml"/>
+	<monster name="Ninnja" file="ninnja.xml"/>
+	<monster name="Verme" file="verme.xml"/>
+	<monster name="Aluna" file="aluna.xml"/>
+	<monster name="Aluno" file="aluno.xml"/>
+	<monster name="Jacare" file="jacare.xml"/>
+	<monster name="Morto Vivo" file="morto_vivo.xml"/>
+	<monster name="Bezouro" file="bezouro.xml"/>
+	<monster name="Peludo" file="peludo.xml"/>
+	<monster name="Scarab" file="scarab.xml"/>
+	<monster name="Tartaruga" file="tartaruga.xml"/>
+	<monster name="Samurai" file="samurai.xml"/>
+	<monster name="Gorila" file="gorila.xml"/>
+	<monster name="Padre" file="padre.xml"/>
+	<monster name="Favelado" file="favelado.xml"/>
+	<monster name="Masson" file="masson.xml"/>
+	<monster name="Mytra" file="mytra.xml"/>
+	<monster name="Advogado" file="advogado.xml"/>
+	<monster name="Renegado" file="renegado.xml"/>
+	<monster name="Justiceiro" file="justiceiro.xml"/>
+	<monster name="Raizet" file="raizet.xml"/>
+	<monster name="Zoky" file="zoky.xml"/>
+
+</monsters>

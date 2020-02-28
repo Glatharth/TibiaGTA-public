@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Treiner" nameDescription="a training" race="blood" experience="100000" speed="0" manacost="0">
+	<health now="300000" max="300000"/>
+	<look type="57" corpse="6080"/>
+	<targetchange interval="15000" chance="50"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="0" attack="0"/>
+	</attacks>
+	<defenses armor="0" defense="0">
+		<defense name="healing" interval="1000" chance="50" min="5500" max="10000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+</monster>
