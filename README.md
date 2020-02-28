@@ -6,10 +6,10 @@ Me chamo Paulo Henrique Lisboa, atualmente tenho 19 anos (2000) e iniciei esse p
 
 # Contato
 Você pode entrar em contato comigo através:
-[Linkedin](https://www.linkedin.com/in/paulo-henrique-8462b8173/)
-[Facebook](https://www.facebook.com/RoyalPaladin)
-Discord: RoyalPaladino#0989
-[Gmail](mailto:phlinho10@gmail.com) / [hotmail](mailto:paulohl10@hotmail.com)
+- [Linkedin](https://www.linkedin.com/in/paulo-henrique-8462b8173/)
+- [Facebook](https://www.facebook.com/RoyalPaladin)
+- Discord: RoyalPaladino#0989
+- [Gmail](mailto:phlinho10@gmail.com) / [hotmail](mailto:paulohl10@hotmail.com)
 
 # Requisitos
 - [TFS 1.3 with Tibia 8.6](https://github.com/nekiro/forgottenserver/tree/8.6-downgrade) or [TFS 1.2 with Tibia 8.6](https://github.com/ninjalulz/forgottenserver/tree/8.6)
