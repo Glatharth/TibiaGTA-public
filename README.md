@@ -8,7 +8,7 @@ Me chamo Paulo Henrique Lisboa, atualmente tenho 19 anos (2000) e iniciei esse p
 Você pode entrar em contato comigo através:
 - [Linkedin](https://www.linkedin.com/in/paulo-henrique-8462b8173/)
 - [Facebook](https://www.facebook.com/RoyalPaladin)
-- Discord: RoyalPaladino#0989
+- Discord: Glatharth#0989
 - [Gmail](mailto:phlinho10@gmail.com) / [hotmail](mailto:paulohl10@hotmail.com)
 
 # Requisitos
